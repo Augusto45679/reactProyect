@@ -2,6 +2,8 @@ import MyFirstComponent from "./components/FirstOne/FirstComponent.tsx";
 import {ComponentCounter} from "./components/ComponentCounter/ComponentCounter.tsx";
 import {useState} from "react";
 import {ComponentUseEffect} from "./components/ComponentUseEffect/ComponentUseEffect.tsx";
+import FormComponent from "./components/Formcomponent/FormComponent.tsx";
+import {AppProduct} from "./components/AppProduct/AppProduct.tsx";
 
 export const App = () => {
 
@@ -15,9 +17,11 @@ export const App = () => {
             <button onClick={ ()=> {setEnableCounter(!enableCounter) }}>Mostrar contador</button>
             <h3>Componente use effect</h3>
             <ComponentUseEffect/>
+            <h4>Form</h4>
+            <FormComponent/>
+            <AppProduct/>
         </div>
 
     )
 }
 
-export default MyFirstComponent;
